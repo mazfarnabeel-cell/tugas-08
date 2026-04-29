@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💰 Personal Expense Tracker</h1>
+
+        <!-- FORM INPUT -->
+        <form id="expense-form">
+            <input type="text" id="name" placeholder="Nama Pengeluaran" required>
+            <input type="number" id="amount" placeholder="Nominal" required>
+
+            <select id="category">
+                <option value="Makan">Makan</option>
+                <option value="Transportasi">Transportasi</option>
+                <option value="Belanja">Belanja</option>
+                <option value="Lainnya">Lainnya</option>
+            </select>
+
+            <button type="submit">Tambah</button>
+        </form>
+
+        <!-- FILTER -->
+        <select id="filter">
+            <option value="All">Semua</option>
+            <option value="Makan">Makan</option>
+            <option value="Transportasi">Transportasi</option>
+            <option value="Belanja">Belanja</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+
+        <!-- TOTAL -->
+        <h2>Total: Rp <span id="total">0</span></h2>
+
+        <!-- LIST -->
+        <ul id="expense-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
